@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status
 from . import models
 from .database import engine, get_db
 from .routers import post, user, auth, vote
@@ -26,7 +26,7 @@ app.include_router(vote.router)
 
 @app.get("/")
 async def root():
-    return {"message": "hello world~~~!!!!!!"}
+    return {"message": "hello it's me"}
 
 
 
