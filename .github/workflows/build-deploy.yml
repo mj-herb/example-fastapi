@@ -4,8 +4,7 @@ on: [push, pull_request]
 
 jobs:
   job1:
-    env: |
-      DATABASE_HOSTNAME=198.199.66.93
+    env: DATABASE_HOSTNAME=198.199.66.93
       DATABASE_PORT=5432
       DATABASE_PASSWORD=0000
       DATABASE_NAME=fastapi
